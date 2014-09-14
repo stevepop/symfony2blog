@@ -15,6 +15,8 @@ use Blog\CoreBundle\Services\PostManager;
 /**
  * Class PostController
  *
+ * @Route("/{_locale}", requirements={"_locale"="en|es"}, defaults={"_locale"="en"})
+ *
  */
 class PostController extends Controller
 {

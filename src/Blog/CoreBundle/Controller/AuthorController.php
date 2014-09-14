@@ -8,6 +8,11 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
+/**
+ * Class AuthorController
+ *
+ * @Route("/{_locale}/author", requirements={"_locale"="en|es"}, defaults={"_locale"="en"})
+ */
 class AuthorController extends Controller
 {
     /**
@@ -18,7 +23,7 @@ class AuthorController extends Controller
      * @throws NotFoundHttpException
      *
      * @return array
-     * @Route("/author/{slug}")
+     * @Route("/{slug}")
      * @Template()
      */
     public function showAction($slug)
