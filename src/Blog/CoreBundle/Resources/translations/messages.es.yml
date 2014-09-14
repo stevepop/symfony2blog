@@ -1,0 +1,25 @@
+home: Inicio
+
+on: on
+by: by
+read.more: Read more
+name: Nombre
+send: Enviar
+
+post:
+  plural: Posts
+  latest: Últimos posts
+  on: Posted on
+    by: Posts por
+    by.author: Posts por %name%
+    comments: '{0} Sin comentarios|{1} %count% comentario|]1,Inf] %count% comentarios'
+
+comment:
+  singular: Comentario
+  plural: Comentarios
+  write: Escribe tu comentario
+
+  author:
+    title: Autor
+    empty.posts: Este autor no ha escrito ningún post todavía.
+

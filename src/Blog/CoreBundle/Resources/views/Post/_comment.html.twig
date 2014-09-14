@@ -1,0 +1,9 @@
+<article class="comment">
+    <header>
+        <p>
+            {{ 'on' | trans | capitalize }} <time datetime="{{ comment.createdAt | date('s') }}">{{ comment.createdAt | date }}</time>
+        </p>
+    </header>
+
+    <p>{{ comment.body | nl2br }}</p>
+</article>
